@@ -63,19 +63,32 @@ le nombre de canots ou encore des acces simple et rapide au pont dans le but de 
 
 ____________________________________________________________
 
-Règle 1 : Un passager est identifié par un numéro d'identification, leur nom et leur sexe. On doit savoir si ils ont survécus ou non (0=non, 1=oui).
-          Chaque passager à un ticket, un numéro de cabine et a un numéro de classe (1 = 1ère classe, 2 = 2ème classe, 3 = 3ème classe)
-          Le passager peut avoir un domestique (0 = non, 1 = oui), et a un port d'embarquement (C = Cherbourg, Q = Queenstown, S = Southampton)
+Règle 1 : Un passager est identifié par un numéro d'identification, leur nom et leur sexe. 
+          On doit savoir si ils ont survécus ou non (0=non, 1=oui).
           
-
-Règle 2 : Un port est identifié par un numéro d'identification
+Règle 2 : Chaque passager à un ticket, un numéro de cabine 
+          et a un numéro de classe (1 = 1ère classe, 2 = 2ème classe, 3 = 3ème classe)
+         
+Règle 3 : Le passager peut avoir un domestique (0 = non, 1 = oui), 
+          et a un port d'embarquement (C = Cherbourg, Q = Queenstown, S = Southampton).
+          
+Règle 4 : Un port est identifié par un numéro d'identification
           Il a un nom ('Cherbourg', 'Queenstown', 'Southampton') et un pays
 
-Règle 3 : Un domestique est identifié par un numéro d'identification.
+Règle 5 : Un domestique est identifié par un numéro d'identification.
           Chaque domestique a un nom et un role.
+         
 
-Regle 4 : Le titanic est composé de caneaux de sauvetage identifiés chacun par un numéro d'identification
-          Chaque caneau a une catégorie, une position ('avant', 'arrière'), un côté ('babord','tribord'), une localisation ('pont','passerelle','toit'), une heure de mise à la mer et une heure de récupération par le Carpathia.
+Regle 6 : Le titanic est composé de caneaux de sauvetage identifiés chacun par un numéro d'identification (numéro (entre 1 et 16) ou lettre (entre A et D))
+          
+
+Règle 7 : Chaque caneau a une catégorie (canot de secours par exemple), 
+          une position de stockage sur le navire ('avant', 'arrière'), 
+          le côté du bâteau ou est stocké le canot ('babord','tribord'), 
+          et la localisation précise du canot ('pont','passerelle','toit').
+
+Règle 8 : Un canot à des renseignements sur l'heure de sa mise à la mer (qui correspond à l'embarcation du caneaux) 
+          et une heure de sa récupération par le Carpathia (l'heure à laquelle le canot est revenu avec les passagers sauvés).
           
 
 
