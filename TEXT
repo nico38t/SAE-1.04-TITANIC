@@ -1,39 +1,4 @@
- Passager :
-passengerId
-name
-pclass
-sex
-age
-ticket
-
-
-Domestics
-passengerId
-role
-name
-serving 
-
-
-
-lifeboats
-    • Lifeboatcat 
-    • LifeboatID XX
-
-lifeboat info
-    • lifeBoatID XX
-    • side
-    • position
-    • location
-    • structure
-    • place
-
-
-
-Port
-Nom du port
-Pays
-
-____________________________________________________________
+_____________________________________________________________
 Etape 1 :
 
 les choses qui on influer sur le nombre de mort lors du naufrage :
@@ -62,7 +27,11 @@ soucier des risque de naufrage. ce qui a eu comme effet la negligence des concep
 le nombre de canots ou encore des acces simple et rapide au pont dans le but de pouvoir vidé les etage inferieur le plus virte possible en vue d'un abendon su navire.
 
 ____________________________________________________________
-Règles de gestion (RG)
+Justification de notre SEA :
+
+A compléter ...
+____________________________________________________________
+Règles de gestion (RG) :
 
 RG1 : Un passager est identifié par son numéro d'identification,son nom et son sexe. 
       On doit savoir si il a survécu ou non (0=non, 1=oui).
@@ -93,19 +62,9 @@ RG7 : Une catégorie est identifiée par son nom. Elle renseigne sur sa structur
       Un canot a une seule catégorie, et une même catégorie peut concerner un ou plusieurs canots.
 
 ____________________________________________________________
-Création de tables
+Conclusion (exprimant en quoi une BD dont le schéma serait dérivé de ce SEA permettrait de répondre à la problématique.) :
 
-Pclass int NOT NULL CHECKS(Pclass IN (1,2,3))
-
-CREATE TABLE LifeBoat (
-     LifeBoatId int NOT NULL primary key,
-     LifeBoatCat varchar NOT NULL,
-     Side varchar NOT NULL CHECKS(Side IN ('babord','tribord')),
-     Position varchar NOT NULL CHECKS(Position IN ('avant', 'arrière')),
-     Launch_Time time NOT NULL,
-     Recovery_Time time NOT NULL,
-     Location varchar NOT NULL CHECKS(Location IN ('pont', 'passerelle', 'toit'))
-)
+A compléter ...
 
 
 
