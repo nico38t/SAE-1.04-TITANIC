@@ -1,31 +1,51 @@
 _____________________________________________________________
 Etape 1 :
 
-les choses qui on influer sur le nombre de mort lors du naufrage :
+Les Facteurs ayant influencé la survie d’un passager : 
 
-14 canot standard de 65 place soit 910 place placée sur les coté du bateau
+Le Titanic, ce bateau considéré comme insubmersible partit en mer avec 2201 personnes à son bord était un navire de croisière avec comme but de relier Southampton et New-York. 
 
-4 canot pliable de 49 place soit  196 place placée a l'arriere du bateau
+Ce navire qui a sombré le 14 avril 1912 pour donner suite à la collision avec un iceberg il est estimé qu'il restait moins de deux heures au navire avant de sombrer. Environ 20 minutes après le choc avec l’iceberg le capitaine a fait préparer les canots de sauvetage, 40 minutes après le choc le capitaine donne l’ordre d’envoyer des signaux de détresse ainsi que de faire monter les femmes est les enfants dans les canots. 
 
-2 canot de secours de 40 place soit 80 place a l'arriere sur les coté du bateau.
+À la suite de cette information un chaos c’est très vite rependu dans l’ensemble du bateau ce qui à causer des problèmes dans le chargement de canots ce qui a causé le départ de canots non plein. 
 
-soit un total de 1114 place dans des canots de sauvetage.
+Certain membre de l’équipage aurait affirmé que cela a était extraordinaire qu’aucun accident n’ait eu lieu lors de cette catastrophe, bien que certain accident ne soit pas passé loin notamment le canots 13 qui a presque était écraser par le canot voisin le numéro 15. 
 
-Il a pris la mere avec 2200 personne a son bors ce qui peut expliquer une partie des mort lors de ce naufrage puisque le bateau ne possédait pas
-les installation nessesaire au sevtage de tous les passager.
+Cela nous démontre encore une nouvelle fois que la panique ainsi que la précipitation était omniprésente lors de cet élément. 
 
-le nombre de personne qui on perit dans ce naufrage et de 1491 il y a donc 710 personne décéder dans ce naufrage.
+Cela a était l’un des accidents de transport les plus meurtrie de l’histoire. Cela peut être dû à plusieurs causes tel que le nombre de canots de sauvetage qui était très insuffisant pour sauver la totalité des passagers du bateau. 
 
-les canots de babors on etait reservé au au femme et enfant ce qui a causé des probleme de 
-remplissage de canots de qui a causé le depart des canots qui pour cetains n'etait pas plein.
+Canots standard :
 
-le naufrage du titanic a egalement atait tres rapide avec ubne colision a 23h40 
-et un naufrage complet du navire a 2h20.
+   * 14 canots de 65 places placés sur les coté du bateau soit 910 places 
 
-l'une des raison qui a put jouer dans la mort de bon nombre de passager et le fait que le nevire qui etait considérer comme insuvbmersible a atait consu sans se 
-soucier des risque de naufrage. ce qui a eu comme effet la negligence des concepteur pour le mes sur de sauvetage comme
-le nombre de canots ou encore des acces simple et rapide au pont dans le but de pouvoir vidé les etage inferieur le plus virte possible en vue d'un abendon su navire.
+Canots pliables :
 
+   * 4 canots pliable de 47 places placés à l’arrière du bateau soit 196 places 
+
+Canots de secours :
+
+   * 2 canots de secours de 40 places placés à l’arrière du bateau sur les coté soit 80 place. 
+
+Pour un total de 1178 place dans les canots de sauvetage. 
+
+Le nombre de personne décéder dans ce naufrage est de 1491 il y a donc eu 710 survivants. 
+
+Ce grand nombre de mort peut s'expliquer par les raisons suivantes. 
+
+Le manque de place dans les canots de sauvetage ce qui même si l’évacuation c’était passer parfaitement n’aurais pas permis de sauver tous les passagers du bateau. 
+
+Le chaos général ainsi que le fait que le bateau n’a pas été conçu dans le but de pouvoir être évacuer rapidement mais plus dans un but de luxe étant donné que le bateau était considéré comme insubmersible. 
+
+L'une des autres raisons qui a pu causer la mort ce bon ombre de passager est la classe à laquelle ils appartenaient, cela peut être dû au fait que les classe inferieur était placé dans les partie basse du bateau.  
+
+Espace qui est donc plus long à évacuer en cas de besoin. 
+
+On a donc les chiffres suivants : 
+
+Seulement 3% des femme de 1ère classe périrent contre 54% des femmes de 3eme classe. 
+
+Également 97% des enfants de la 1ère et 2eme classe furent sauvé contre seulement 34% des enfants de la 3eme classe. 
 ____________________________________________________________
 Justification de notre SEA :
 
@@ -61,15 +81,28 @@ RG6 : Le titanic est composé de canots de sauvetage identifiés chacun par un n
 RG7 : Une catégorie est identifiée par son nom. Elle renseigne sur sa structure et sa capacité.
       Un canot a une seule catégorie, et une même catégorie peut concerner un ou plusieurs canots.
 
-
-// je pense qu'il y a un atribut LifeBoatId dans specLifeBoats car comme cela si on veux connaitre les ID ou le nombre de canots en fonction de leur categorie.
-je pense aussi que la PK de life boats spec n'est pas bonne car il y a plusieur n-upllets pour chaque catagorie, la categorie ne peut donc pas etre une cles primaire.
-je pense que la cles primaire est lifeboatId car c le seul attribut des canots qui peut nous permetre de l'identifier precisement avec une simple information.
-//
 ____________________________________________________________
 Conclusion (exprimant en quoi une BD dont le schéma serait dérivé de ce SEA permettrait de répondre à la problématique.) :
 
-A compléter ...
+Une base de données dérivé de notre SEA permet de répondre à la problématique, car nous l’avons organisé de manière à ce que les informations soient les plus simple à obtenir: 
+
+La relation ‘Passenger’ nous permet d’avoir des informations cruciales sur l’âge, le sexe et s’ils ont survécu ou non, ce qui permettrai de recontextualiser les évènements et pouvoir recueillir les données importantes pour faire des études et des graphiques. 
+
+Nous avons aussi accès au ticket du passager ce qui nous permet de connaître le prix et la classe des passager sur le Titanic, ce qui permettrai de démontrer les inégalités entre les différentes classes (déterminer les taux de survie relatif à chaque classe). 
+
+La table port nous permet de connaitre les informations relatives à chaque port tel que son nom et son pays, ce qui donnerai lieu à des études sur les provenances des passagers, et donc savoir quelle nationalité a eu le plus de victimes par exemples. 
+
+Grâce à la relation sur les canots de sauvetage, nous pouvons expliquer : 
+
+Le manque de place dans les canots de sauvetage ce qui même si l’évacuation c’était passer parfaitement n’aurais pas permis de sauver tous les passagers du bateau. 
+
+Le chaos général ainsi que le fait que le bateau n’a pas été conçu dans le but de pouvoir être évacuer rapidement mais plus dans un but de luxe étant donné que le bateau était considéré comme insubmersible. 
+
+Car nous pouvons compter le nombre total de places sur les bateaux, et comparer avec le nombre total de passagers. Nous pouvons aussi étudier l’emplacement des bateaux pour regarder si les passagers de 1ère classe étaient avantagés (déterminer le taux de survie des passagers en fonction du placement sur le bateau). 
+
+La relation ‘LifeBoats’ est complétée par la table ‘SpecLifeBoats ‘qui elle nous donne les informations techniques sur les canots de sauvetages, dans le but d’étudier la structure générale et la capacité en fonction de la catégorie, pour prouver que choix stratégique des canots ne permettait pas d’assurer la sécurité à bord. 
+
+Toutes ces informations dans cette BD nous permettront d’étudier les facteurs qui ont influencés la survie des passagers à bord du Titanic. 
 
 
 
