@@ -49,7 +49,10 @@ Seulement 3% des femme de 1ère classe périrent contre 54% des femmes de 3eme c
 ____________________________________________________________
 Justification de notre SEA :
 
-A compléter ...
+Un passager est identifié par un numéro unique, un nom et un sexe pour pouvoir assurer que la clé primaire soit une clé candidate.
+
+Un domestique est initialisé par notre association 'Sert', il est identifié par l'attibut 'PassengerId_Domestique' pour pouvoir le différencier des passagers classiques, et il y a l'attribut 'rôle' pour pouvoir savoir quelle ets la fonction du domestique.
+Un passager peux avoir un ou plusieurs domestiques, car nous avons vérifiés dans les informations données, qu'un passager pouvais avoir plusieurs domestiques 
 ____________________________________________________________
 Règles de gestion (RG) :
 
@@ -58,7 +61,7 @@ RG1 : Un passager est identifié par son numéro d'identification,son nom et son
       Il un numéro de cabine, pas renseigné forcément.
       Le passager peut avoir du personnel (0 = non, 1 = oui).
 
-RG2 : Un domestique est un identifié par son numéro d'identification. Chaque domestique a un nom et un role.
+RG2 : Un domestique a les propriétés d'un passager, il est identifié par son numéro d'identification. Chaque domestique un role pour définir sa fonction.
       Un passager peut avoir un ou plusieurs domestique, et un domestique travail pour un seul passager.
          
 RG2 : Un ticket a un numéro unique, un prix et un numéro de classe (1 = 1ère classe, 2 = 2ème classe, 3 = 3ème classe).
