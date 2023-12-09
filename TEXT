@@ -51,8 +51,10 @@ Justification de notre SEA :
 
 Un passager est identifié par un numéro unique, un nom et un sexe pour pouvoir assurer que la clé primaire soit une clé candidate.
 
-Un domestique est initialisé par notre association 'Sert', il est identifié par l'attibut 'PassengerId_Domestique' pour pouvoir le différencier des passagers classiques, et il y a l'attribut 'rôle' pour pouvoir savoir quelle ets la fonction du domestique.
-Un passager peux avoir un ou plusieurs domestiques, car nous avons vérifiés dans les informations données, qu'un passager pouvais avoir plusieurs domestiques 
+Un domestique est un passager, avec l'exception qu'il est initialisé par notre association 'Sert' (identifié par l'attibut 'PassengerId_Domestique' pour pouvoir le différencier des passagers classiques), et il y a l'attribut 'rôle' pour pouvoir savoir quelle est sa fonction.
+Un passager peux avoir un ou plusieurs domestiques, car nous avons vérifiés dans les informations données, qu'un passager pouvais en avoir plusieurs ou aucun.
+Un domestique, au contraire, est employé par un et un seul passager (vérifié dans la table de données).
+
 ____________________________________________________________
 Règles de gestion (RG) :
 
