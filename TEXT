@@ -66,14 +66,14 @@ RG1 : Un passager est identifié par son numéro d'identification,son nom et son
 RG2 : Un domestique a les propriétés d'un passager, il est identifié par son numéro d'identification. Chaque domestique un role pour définir sa fonction.
       Un passager peut avoir un ou plusieurs domestique, et un domestique travail pour un seul passager.
          
-RG2 : Un ticket a un numéro unique, un prix et un numéro de classe (1 = 1ère classe, 2 = 2ème classe, 3 = 3ème classe).
+RG3 : Un ticket a un numéro unique, un prix et un numéro de classe (1 = 1ère classe, 2 = 2ème classe, 3 = 3ème classe).
       Un passager à un seul ticket et un ticket est attitré a un seul passager.
 
 RG4 : Un port est identifié par un numéro d'identification
       Il a un nom (C = 'Cherbourg', Q = 'Queenstown', S = 'Southampton') et un pays.
       Un port peut accueillir un ou plusieurs passagers, et un passager est attitré à un et un seul port.
 
-RG6 : Le titanic est composé de canots de sauvetage identifiés chacun par un numéro d'identification (numéro (entre 1 et 16) ou lettre (entre A et D))
+RG5 : Le titanic est composé de canots de sauvetage identifiés chacun par un numéro d'identification (numéro (entre 1 et 16) ou lettre (entre A et D))
       Chaque canot est catégorisé (canot de secours par exemple), 
       une position de stockage sur le navire ('avant', 'arrière'), 
       le côté du bâteau ou est stocké le canot ('babord','tribord'), 
@@ -83,7 +83,7 @@ RG6 : Le titanic est composé de canots de sauvetage identifiés chacun par un n
 
       Un passager à pu ou non évacuer sur un seul canot de sauvetage, et un canot peut supporter un ou plusieurs passager en fonction de sa catégorie (c.f. contrainte 1)
 
-RG7 : Une catégorie est identifiée par son nom. Elle renseigne sur sa structure et sa capacité.
+RG6 : Une catégorie est identifiée par son nom. Elle renseigne sur sa structure et sa capacité.
       Un canot a une seule catégorie, et une même catégorie peut concerner un ou plusieurs canots.
 
 ____________________________________________________________
