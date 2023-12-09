@@ -61,6 +61,11 @@ RG6 : Le titanic est composé de canots de sauvetage identifiés chacun par un n
 RG7 : Une catégorie est identifiée par son nom. Elle renseigne sur sa structure et sa capacité.
       Un canot a une seule catégorie, et une même catégorie peut concerner un ou plusieurs canots.
 
+
+// je pense qu'il y a un atribut LifeBoatId dans specLifeBoats car comme cela si on veux connaitre les ID ou le nombre de canots en fonction de leur categorie.
+je pense aussi que la PK de life boats spec n'est pas bonne car il y a plusieur n-upllets pour chaque catagorie, la categorie ne peut donc pas etre une cles primaire.
+je pense que la cles primaire est lifeboatId car c le seul attribut des canots qui peut nous permetre de l'identifier precisement avec une simple information.
+//
 ____________________________________________________________
 Conclusion (exprimant en quoi une BD dont le schéma serait dérivé de ce SEA permettrait de répondre à la problématique.) :
 
