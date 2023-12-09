@@ -49,11 +49,21 @@ Seulement 3% des femme de 1ère classe périrent contre 54% des femmes de 3eme c
 ____________________________________________________________
 Justification de notre SEA :
 
-Un passager est identifié par un numéro unique, un nom et un sexe pour pouvoir assurer que la clé primaire soit une clé candidate.
+Nous avons choisi de créer une table ‘LifeBoats’ qui contient des informations de localisation, cette table est reliée au passager par l'association ‘se retire’ qui exprime l’action de monter dans le canot de sauvetage. Nous avons mis comme attribut ‘Recovery_Time’ qui nous permet de connaitre l’heure de sauvetage des passagers par d’autre bateaux. 
 
-Un domestique est un passager, avec l'exception qu'il est initialisé par notre association 'Sert' (identifié par l'attibut 'PassengerId_Domestique' pour pouvoir le différencier des passagers classiques), et il y a l'attribut 'rôle' pour pouvoir savoir quelle est sa fonction.
-Un passager peux avoir un ou plusieurs domestiques, car nous avons vérifiés dans les informations données, qu'un passager pouvais en avoir plusieurs ou aucun.
-Un domestique, au contraire, est employé par un et un seul passager (vérifié dans la table de données).
+Nous avons également fait le choix de créer une table ‘SpecLifeBoats’ qui a pour but de nous donner des informations supplémentaires (sur la catégorie, la structure et le nombre de places) sur le canot sans surcharger ‘LifeBoats’, elle est reliée à ‘LifeBoats’ par l'association ‘Est_Categorisé’ avec comme cardinalité (1,1) car un canot n’a qu’une seule catégorie, et (1,n) car une même catégorie peut concerner plusieurs canots. 
+
+La table ‘Port’ contient les informations relatives à un port, elle est liée à la table ’Passenger‘ grâce à l'association ‘Embarque’. Les cardinalités son de (1,n) car un même port peut concerner plusieurs ’Passenger‘ et 1,1 car un passager ne provient que d’un seul port. 
+
+La table ‘ticket’ est reliée à la table ’Passenger‘ grâce à l'association ‘Achat’ qui a comme cardinalité 0,1 car un ’Passenger‘ peut acheter un ticket mais s’il fait partie du personnel il n’a pas besoin d’un ticket. 
+
+Un passager est identifié par un numéro unique, un nom et un sexe pour pouvoir assurer que la clé primaire soit une clé candidate. 
+
+Un domestique est un passager, avec l'exception qu'il est initialisé par notre association 'Sert' (identifié par l'attribut 'PassengerId_Domestique' pour pouvoir le différencier des passagers classiques), et il a l'attribut 'rôle' pour savoir sa fonction. 
+
+Un passager peut avoir un ou plusieurs domestiques, car nous avons vérifiés dans les informations données, qu'un passager pouvais en avoir plusieurs ou aucun. 
+
+Un domestique, au contraire, est employé par un et un seul passager (vérifié dans la table de données). 
 
 ____________________________________________________________
 Règles de gestion (RG) :
